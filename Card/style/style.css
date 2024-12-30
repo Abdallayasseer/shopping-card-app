@@ -1,0 +1,142 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s;
+}
+.container {
+  margin: auto;
+  transition: 0.5s;
+}
+header {
+  width: 80%;
+  margin: auto;
+  transition: 0.5s;
+}
+header img {
+  width: 40px;
+}
+.shopping {
+  cursor: pointer;
+}
+header .quantity {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: -20px;
+}
+.list {
+  margin-top: 30px;
+}
+.cards {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: #453e3b;
+  height: 100vh;
+  transition: all 0.3s;
+}
+.cards h1 {
+  color: yellow;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+}
+.cards .checkout {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+}
+.closeShopping {
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.active .cards {
+  left: calc(100% - 500px);
+}
+.active .container {
+  transform: translateX(-200px);
+}
+.col-4 {
+  padding-top: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.card {
+  margin-bottom: 40px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.listCard li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid white;
+  /* padding: 20px 0px; */
+}
+.listCard img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.count-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.count-btn button {
+  margin: 0 8px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.count-btn button:hover {
+  background-color: black;
+  color: white;
+}
+.count {
+  color: white;
+  font-size: 24px;
+}
+.productDetails{
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+}
+.card-img{
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.card-img:hover{
+  transform: scale(1.1);
+}
